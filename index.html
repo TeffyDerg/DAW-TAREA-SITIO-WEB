@@ -63,6 +63,27 @@
             }
         }
 
+
+  
+        .eslogan {
+            font-size: 1em;
+            font-weight: bold;
+            margin: 1.33em 0;
+        }
+
+        .bienvenida-box {
+            background-color: var(--color-tarjeta);
+            box-shadow: var(--sombra-tarjeta);
+            overflow-wrap: anywhere;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            border: 5px solid #0f766e;
+            border-radius: 8px;
+            padding: 10px 80px 0 80px;
+            text-align: center;
+        }
+
         section{
             background-color: var(--color-tarjeta);
             border-radius: var(--radius);
@@ -85,7 +106,7 @@
             <h1>HG personalizados</h1>
         </div>
 
-        <h4>Tu marca, en grande y en cada detalle.</h4>
+        <p class="eslogan">Tu marca, en grande y en cada detalle.</p>
 
     </header>
 
@@ -99,18 +120,14 @@
     <main>
 
         <section id="Inicio">
-            <section style="
-                border: 5px solid #0f766e;
-                border-radius: 8px;
-                padding: 10px 80px 0 80px;
-                text-align: center;">
+            <div class="bienvenida-box">
 
                 <p id="bienvenida">Creamos soluciones publicitarias que dan vida a tus ideas. Desde impresiones en gran formato hasta artículos personalizados y letreros tridimensionales, combinamos diseño, impresión y 
                     creatividad para que tu marca destaque.</p>
 
-            </section>
+            </div>
 
-            <h3 class="Inicio" style="padding-top: 50px;">Publicidad que transforma ideas en imágenes</h3>
+            <h2 class="Inicio" style="padding-top: 50px;">Publicidad que transforma ideas en imágenes</h2>
 
             <p>En HG Personalizados ayudamos a negocios, emprendimientos y personas a comunicar sus ideas mediante productos impresos y personalizados. Ofrecemos alternativas para promocionar marcas, identificar 
                 establecimientos, decorar espacios 
@@ -128,77 +145,45 @@
             <h2 class="Catalogo" style="padding-bottom: 20px;">¿Qué ofrecemos?</h2>
 
             <ol>
-                <li><h3>Impresión en lona</h3></li>
-                <p>Impresiones de gran formato para anuncios, promociones, eventos y fachadas comerciales. 
-                    Son una opción práctica para transmitir 
-                    mensajes visibles en espacios interiores y exteriores.</p>
+                <li>
+                    <h3>Impresión en lona</h3>
+                    <p>Impresiones de gran formato para anuncios, promociones, eventos y fachadas comerciales. Son una opción práctica para transmitir mensajes visibles en espacios interiores y exteriores.</p>
+                    <img src="img/impresionlona.jpg" alt="Lona publicitaria impresa de gran formato" width="300" height="250" class="center">
+                </li>
 
-                    <img src="img/impresionlona.jpg" 
-                        alt="impresion en lona"
-                        width="300px" 
-                        height=" 250px"
-                        class="center">
+                <li>
+                    <h3>Sublimación en tazas</h3>
+                    <p>Tazas personalizadas con fotografías, nombres, ilustraciones, frases o logotipos. Ideales para regalos, recuerdos de celebraciones y artículos promocionales.</p>
+                    <img src="img/taza-sublimacion-bornel.jpg" alt="Taza personalizada mediante sublimación" width="300" height="250" class="center">
+                </li>
 
-                <li><h3>Sublimación en tazas</h3></li>
-                <p>Tazas personalizadas con fotografías, nombres, ilustraciones, 
-                    frases o logotipos. Ideales para regalos, 
-                    recuerdos de celebraciones y artículos 
-                    promocionales.</p>
+                <li>
+                    <h3>Sublimación en camisetas</h3>
+                    <p>Prendas con diseños personalizados para emprendimientos, equipos, eventos, uniformes promocionales y grupos que desean compartir una imagen visual común.</p>
+                    <img src="img/sublimacion_camisetas.webp" alt="Camiseta con diseño sublimado" width="300" height="250" class="center">
+                </li>
 
-                    <img src="img/taza-sublimacion-bornel.jpg" 
-                        alt="impresion en lona"
-                        width="300px" 
-                        height=" 250px"
-                        class="center">
+                <li>
+                    <h3>Tarjetas de presentación</h3>
+                    <p>Tarjetas con información de contacto, identidad visual y datos profesionales para presentar un negocio, facilitar el contacto con clientes y fortalecer la imagen de una marca.</p>
+                    <img src="img/tarjetas_presentacion.png" alt="Tarjetas de presentación empresariales" width="300" height="250" class="center">
+                </li>
 
-                <li><h3>Sublimación en camisetas</h3></li>
-                <p>Prendas con diseños personalizados para emprendimientos, equipos, eventos, 
-                    uniformes promocionales y grupos que desean 
-                    compartir una imagen visual común.</p>
+                <li>
+                    <h3>Pines personalizados</h3>
+                    <p>Pequeños distintivos con logotipos, personajes, símbolos o diseños propios. Pueden utilizarse como recuerdos, artículos de colección, identificadores o productos promocionales.</p>
+                    <img src="img/pines_personalizados.jpg" alt="Colección de pines personalizados" width="300" height="250" class="center">
+                </li>
 
-                    <img src="img/sublimacion_camisetas.webp" 
-                        alt="impresion en lona"
-                        width="300px" 
-                        height=" 250px"
-                        class="center">
-
-                <li><h3>Tarjetas de presentación</h3></li>
-                <p>Tarjetas con información de contacto, identidad visual y datos profesionales para presentar un negocio, 
-                    facilitar el contacto con clientes y fortalecer 
-                    la imagen de una marca.</p>
-        
-                <img src="img/tarjetas_presentacion.png" 
-                    alt="impresion en lona"
-                    width="300px" 
-                    height=" 250px"
-                    class="center">
-
-                <li><h3>Pines personalizados</h3></li>
-                <p>Pequeños distintivos con logotipos, personajes, símbolos o diseños propios. 
-                    Pueden utilizarse como recuerdos, 
-                    artículos de colección, identificadores o productos promocionales.</p>
-
-                    <img src="img/pines_personalizados.jpg" 
-                        alt="impresion en lona"
-                        width="300px" 
-                        height=" 250px"
-                        class="center">
-
-                <li><h3>Letretos publicitarios</h3></li>
-                <p>Señalización para locales comerciales, oficinas y puntos de venta, diseñada para identificar establecimientos, 
-                    comunicar promociones y facilitar que los 
-                    clientes reconozcan una marca.</p>
-
-                    <img src="img/letreros.jpg" 
-                        alt="impresion en lona"
-                        width="300px" 
-                        height=" 250px"
-                        class="center">
+                <li>
+                    <h3>Letreros publicitarios</h3>
+                    <p>Señalización para locales comerciales, oficinas y puntos de venta, diseñada para identificar establecimientos, comunicar promociones y facilitar que los clientes reconozcan una marca.</p>
+                    <img src="img/letreros.jpg" alt="Letrero publicitario para un local comercial" width="300" height="250" class="center">
+                </li>
             </ol>
         </section>
 
-        <article>
-            <section style="padding-left: 50px;" >
+        <section style="padding-left: 50px;">
 
                 <h2>¿Por qué elegir nuestras soluciones publicitarias?</h2>
 
@@ -215,31 +200,36 @@
 
                 <h3 class="subtitulo">Comunicación visual efectiva</h3>
                 <p>Una buena combinación de imagen, tipografía y color ayuda a presentar los mensajes con claridad y a captar la atención del público.</p>
-            </section>
-        </article>
+        </section>
 
-        <section>
-            <article id="guia-pub" style="padding-bottom: 50px;">
+        <section id="guia-pub" style="padding-bottom: 80px;">
                 <h3>¿Cómo comienza un proyecto publicitario?</h3>
 
                 <ol style="padding-left: 50px;" >
-                    <li><h3>Definir la idea</h3></li>
-                    <p>Se identifica el objetivo del producto, el público al que se dirige y el mensaje que se desea comunicar.</p>
+                    <li>
+                        <h3>Definir la idea</h3>
+                        <p>Se identifica el objetivo del producto, el público al que se dirige y el mensaje que se desea comunicar.</p>
+                    </li>
 
-                    <li><h3>Preparar el diseño</h3></li>
-                    <p>Se seleccionan los colores, las imágenes, la tipografía y la distribución de los elementos según el producto.</p>
+                    <li>
+                        <h3>Preparar el diseño</h3>
+                        <p>Se seleccionan los colores, las imágenes, la tipografía y la distribución de los elementos según el producto.</p>
+                    </li>
 
-                    <li><h3>Seleccionar el material y la técnica</h3></li>
-                    <p>Se determina si el proyecto requiere impresión en lona, sublimación, impresión de tarjetas o elaboración de señalización.</p>
+                    <li>
+                        <h3>Seleccionar el material y la técnica</h3>
+                        <p>Se determina si el proyecto requiere impresión en lona, sublimación, impresión de tarjetas o elaboración de señalización.</p>
+                    </li>
                 
-                    <li><h3>Revisar el resultado</h3></li>
-                    <p>Se verifica que el contenido, las dimensiones y la presentación correspondan con los requisitos definidos para el proyecto.</p>
+                    <li>
+                        <h3>Revisar el resultado</h3>
+                        <p>Se verifica que el contenido, las dimensiones y la presentación correspondan con los requisitos definidos para el proyecto.</p>
+                    </li>
                 
                 </ol>
 
 
-            </article>
-         </section>
+        </section>
 
         <section>
             <h3>Tu próxima idea merece hacerse visible</h3>
@@ -252,13 +242,7 @@
         </section>
     
         <a class="boton" href="catalogo.html" 
-            style="margin-top: 50px; 
-            display: block; 
-            margin-left: auto; 
-            margin-right: auto; 
-            text-align: center; 
-            width: 
-            max-content;"> 
+            style="margin-top: 50px; display: block; margin-left: auto; margin-right: auto; text-align: center; width: max-content;"> 
             Ver catálogo de productos
         </a>
     
