@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | HG Personalizados</title>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+    <style>    
+        .center{
+            display: block;
+            margin-left : auto;
+            margin-right : auto;
+        }
+
+
+        .header_center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        /*logo y el título */
+        .header_titulo {
+            display: grid;
+            grid-template-columns: 80px 1fr 80px;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /*Logo a la izquierda */
+        .header_titulo img {
+            grid-column: 1;
+            width: 80px;
+            height: auto;
+        }
+
+        /*titulo centrado */
+        .header_titulo h1 {
+            grid-column: 2;
+            text-align: center;
+            margin: 0;
+        }
+
+        /*ajuste para cel */
+        @media (max-width: 480px) {
+            .header_titulo {
+                grid-template-columns: 55px 1fr 55px;
+            }
+
+            .header_titulo img {
+                width: 55px;
+            }
+
+            .header_titulo h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        section{
+            background-color: var(--color-tarjeta);
+            border-radius: var(--radius);
+            box-shadow: var(--sombra-tarjeta);
+            padding: 30px;
+            overflow-wrap: anywhere;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <header class="header_center">
+
+        <div class="header_titulo">
+            <img src="img/logo.png" alt="Logo de HG personalizados">
+            <h1>HG personalizados</h1>
+        </div>
+
+        <h4>Tu marca, en grande y en cada detalle.</h4>
+
+    </header>
+
+
+    <nav>
+        <a class="menu" href="index.html">Inicio</a>
+        <a class="menu" href="catalogo.html">Catálogo</a>
+        <a class="menu" href="servicios.html">Servicios</a>
+        <a class="menu" href="index.html#guia-pub">Guía publicitaria</a>
+
+    </nav>
+
+
+    <section>
+        <h1 style="align-self: center;">Catálogo</h1>
+    </section>
+
+    <div class="container">
+
+        <div class="card destacada" data-tipo="lona">
+            <h4>Impresión en lona publicitaria</h4>
+            <img src="img/impresionlona.jpg" alt="Lona publicitaria impresa">
+            <p>Impresiones de gran formato para promocionar negocios, productos y servicios en espacios interiores o exteriores.</p>
+            <a href="servicios.html#lona" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="banners">
+            <h4>Banners para eventos</h4>
+            <img src="img/baners_eventos.avif" alt="Banner publicitario para eventos">
+            <p>Diseños impresos para ferias, exposiciones, celebraciones y actividades comerciales.</p>
+            <a href="servicios.html#banners" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="tazas">
+            <h4>Tazas personalizadas</h4>
+            <img src="img/sublimacion_tazas2.jpg" alt="Tazas con diseños personalizados">
+            <p>Tazas sublimadas con fotografías, nombres, frases o logotipos. Ideales para regalos y promociones.</p>
+            <a href="servicios.html#tazas" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="camisetas">
+            <h4>Camisetas sublimadas</h4>
+            <img src="img/sublimacion_camisetas2.webp" alt="Camisetas con estampados personalizados">
+            <p>Prendas con diseños creativos para eventos, equipos, emprendimientos y uso personal.</p>
+            <a href="servicios.html#camisetas" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="uniformes">
+            <h4>Ropa promocional</h4>
+            <img src="img/ropa_promocional.webp" alt="Ropa personalizada para una marca">
+            <p>Prendas personalizadas para representar la identidad de una empresa, negocio o grupo de trabajo.</p>
+            <a href="servicios.html#uniformes" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="tarjetas">
+            <h4>Tarjetas de presentación</h4>
+            <img src="img/Tarjeta-de-presentacion.png" alt="Tarjetas de presentación empresariales">
+            <p>Tarjetas con nombres, logotipos e información de contacto para proyectar una imagen profesional.</p>
+            <a href="servicios.html#tarjetas" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="flyers">
+            <h4>Tarjetas promocionales</h4>
+            <img src="img/prod_197.jpg" alt="Tarjetas promocionales impresas">
+            <p>Material impreso para comunicar ofertas, presentar productos y dar a conocer servicios.</p>
+            <a href="servicios.html#flyers" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="pines">
+            <h4>Pines personalizados</h4>
+            <img src="img/pines_personalizados.jpg" alt="Colección de pines personalizados">
+            <p>Pines con ilustraciones, símbolos, personajes o logotipos para recuerdos, colecciones y promociones.</p>
+            <a href="servicios.html#pines" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="letreros">
+            <h4>Letreros para locales</h4>
+            <img src="img/letreros_locales.jpg" alt="Letrero identificativo de un local comercial">
+            <p>Letreros diseñados para identificar tiendas, oficinas, restaurantes y otros establecimientos.</p>
+            <a href="servicios.html#letreros" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="letreros3d">
+            <h4>Letreros publicitarios 3D</h4>
+            <img src="img/letreros3d.webp" alt="Letrero comercial con letras tridimensionales">
+            <p>Letras y logotipos con volumen que aportan profundidad y una presentación llamativa a las marcas.</p>
+            <a href="servicios.html#letreros3d" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="luminosos">
+            <h4>Letreros luminosos</h4>
+            <img src="img/letrero_luminoso.jpg" alt="Letrero comercial iluminado">
+            <p>Soluciones de señalización con iluminación para mejorar la visibilidad de negocios y establecimientos.</p>
+            <a href="servicios.html#luminosos" target="_self">Ver más</a>
+        </div>
+
+        <div class="card" data-tipo="senalizacion">
+            <h4>Señalización comercial</h4>
+            <img src="img/señaleticas.jpg" alt="Señales informativas para un establecimiento">
+            <p>Rótulos y señales para orientar a los visitantes, identificar espacios y comunicar información importante.</p>
+            <a href="servicios.html#senalizacion" target="_self">Ver más</a>
+        </div>
+
+    </div>
+</body>
+
+    <footer>
+        <p>
+            HG Personalizados — Tu marca, en grande
+            y en cada detalle.
+        </p>
+
+        <p>
+            <a href="index.html" style="color: white;">Inicio</a> |
+            <a href="catalogo.html" style="color: white;">Catálogo</a> |
+            <a href="servicios.html" style="color: white;">Servicios</a>
+        </p>
+    </footer>
+
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Servicios y técnicas | HG Personalizados</title>
+
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <style>    
+        .center{
+            display: block;
+            margin-left : auto;
+            margin-right : auto;
+        }
+
+
+        .header_center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 10px;
+        }
+
+        /*logo y el título */
+        .header_titulo {
+            display: grid;
+            grid-template-columns: 80px 1fr 80px;
+            align-items: center;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /*Logo a la izquierda */
+        .header_titulo img {
+            grid-column: 1;
+            width: 80px;
+            height: auto;
+        }
+
+        /*titulo centrado */
+        .header_titulo h1 {
+            grid-column: 2;
+            text-align: center;
+            margin: 0;
+        }
+
+        /*ajuste para cel */
+        @media (max-width: 480px) {
+            .header_titulo {
+                grid-template-columns: 55px 1fr 55px;
+            }
+
+            .header_titulo img {
+                width: 55px;
+            }
+
+            .header_titulo h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        section{
+            background-color: var(--color-tarjeta);
+            border-radius: var(--radius);
+            box-shadow: var(--sombra-tarjeta);
+            padding: 30px;
+            overflow-wrap: anywhere;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .boton{    
+            justify-content: center;
+            align-items: center; 
+            height: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header_center">
+
+        <div class="header_titulo">
+            <img src="img/logo.png" alt="Logo de HG personalizados">
+            <h1>HG personalizados</h1>
+        </div>
+
+        <h4>Tu marca, en grande y en cada detalle.</h4>
+
+    </header>
+
+
+    <nav>
+        <a class="menu" href="index.html">Inicio</a>
+        <a class="menu" href="catalogo.html">Catálogo</a>
+        <a class="menu" href="servicios.html">Servicios</a>
+        <a class="menu" href="index.html#guia-pub">Guía publicitaria</a>
+    </nav>
+
+    <main>
+
+
+        <section class="hero">
+            <div class="container">
+                <h2>Servicios y técnicas de impresión</h2>
+
+                <p>
+                    La publicidad impresa permite comunicar ideas,
+                    presentar productos y fortalecer la identidad
+                    visual de un negocio. Cada material y técnica
+                    ofrece posibilidades diferentes según el uso,
+                    el diseño y el lugar donde se colocará.
+                </p>
+
+                <p>
+                    En HG Personalizados presentamos distintas
+                    soluciones para personalizar artículos,
+                    producir material promocional e identificar
+                    establecimientos comerciales.
+                </p>
+
+                <a class="boton" href="catalogo.html">
+                    Explorar catálogo
+                </a>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <!--lonas-->
+            <section class="servicio-grupo">
+                <h2>1. Impresión en gran formato</h2>
+
+                <article class="card servicio-detalle" id="lona">
+                    <h3>Impresión en lona publicitaria</h3>
+
+                    <img
+                        src="img/impresionlona.jpg"
+                        alt="Lona publicitaria impresa"
+                    >
+
+                    <p>
+                        La impresión en lona permite reproducir
+                        anuncios, fotografías, logotipos y mensajes
+                        publicitarios en superficies de gran tamaño.
+                        Se utiliza en fachadas, campañas comerciales,
+                        ferias y eventos.
+                    </p>
+
+                    <p>
+                        Para elegir la lona adecuada, se debe
+                        considerar el tamaño, el lugar de instalación,
+                        la exposición al clima y el tiempo que
+                        permanecerá colocada.
+                    </p>
+
+                    <p>
+                        <strong>Aplicaciones:</strong>
+                        anuncios exteriores, promociones comerciales
+                        y publicidad para eventos.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="banners">
+                    <h3>Banners para eventos</h3>
+
+                    <img
+                        src="img/baners_eventos.avif"
+                        alt="Banner publicitario para eventos"
+                    >
+
+                    <p>
+                        Los banners presentan información visual
+                        en ferias, exposiciones, conferencias,
+                        celebraciones y puntos de venta.
+                    </p>
+
+                    <p>
+                        Su diseño debe priorizar un título visible,
+                        imágenes claras y textos breves para que
+                        el mensaje pueda comprenderse a distancia.
+                        Las dimensiones y los soportes dependen
+                        del espacio disponible.
+                    </p>
+                </article>
+            </section>
+
+            <!--sublimacion -->
+            <section class="servicio-grupo">
+                <h2>2. Sublimación y productos personalizados</h2>
+
+                <article class="card servicio-detalle" id="tazas">
+                    <h3>Sublimación en tazas</h3>
+
+                    <img
+                        src="img/taza-sublimacion-bornel.jpg"
+                        alt="Tazas personalizadas mediante sublimación"
+                    >
+
+                    <p>
+                        La sublimación utiliza tinta especial,
+                        papel de transferencia y calor para aplicar
+                        diseños sobre artículos preparados
+                        para esta técnica.
+                    </p>
+
+                    <p>
+                        En las tazas, es necesario utilizar
+                        superficies con un recubrimiento compatible
+                        con la sublimación. El diseño puede incluir
+                        nombres, fotografías, ilustraciones,
+                        frases o logotipos.
+                    </p>
+
+                    <p>
+                        <strong>Aplicaciones:</strong>
+                        regalos personalizados, recuerdos de
+                        celebraciones y artículos promocionales.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="camisetas">
+                    <h3>Sublimación en camisetas</h3>
+
+                    <img
+                        src="img/sublimacion_camisetas2.webp"
+                        alt="Camisetas con diseños personalizados"
+                    >
+
+                    <p>
+                        Esta técnica permite transferir imágenes
+                        a prendas fabricadas con poliéster o con
+                        una composición adecuada para sublimar.
+                        El diseño se transfiere mediante calor
+                        y presión.
+                    </p>
+
+                    <p>
+                        Las prendas blancas o de colores claros
+                        suelen ofrecer mejores resultados, ya
+                        que la sublimación no incorpora tinta
+                        blanca para cubrir el color de la tela.
+                    </p>
+
+                    <p>
+                        <strong>Aplicaciones:</strong>
+                        camisetas para eventos, equipos deportivos,
+                        emprendimientos y uso personal.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="uniformes">
+                    <h3>Ropa promocional</h3>
+
+                    <img
+                        src="img/ropa_promocional.webp"
+                        alt="Ropa promocional personalizada"
+                    >
+
+                    <p>
+                        Las prendas promocionales ayudan a difundir
+                        la identidad de una empresa, organización
+                        o grupo. Pueden incorporar logotipos,
+                        nombres, ilustraciones y colores corporativos.
+                    </p>
+
+                    <p>
+                        Antes de escoger el método de estampado,
+                        se debe verificar el tipo de tela, el color
+                        de la prenda y las características del diseño.
+                        La sublimación es una alternativa para tejidos
+                        compatibles, pero no es adecuada para
+                        cualquier tipo de ropa.
+                    </p>
+                </article>
+
+                <aside class="nota-tecnica">
+                    <h3>Dato importante sobre la sublimación</h3>
+
+                    <p>
+                        No todas las superficies admiten esta técnica.
+                        Las prendas requieren tejidos compatibles,
+                        mientras que las tazas necesitan un
+                        recubrimiento diseñado para sublimación.
+                        Elegir correctamente el material ayuda
+                        a obtener una transferencia apropiada.
+                    </p>
+                </aside>
+            </section>
+
+            <!--impresos y articulos-->
+            <section class="servicio-grupo">
+                <h2>3. Material impreso y artículos promocionales</h2>
+
+                <article class="card servicio-detalle" id="tarjetas">
+                    <h3>Tarjetas de presentación</h3>
+
+                    <img
+                        src="img/tarjetas_presentacion.png"
+                        alt="Tarjetas de presentación comerciales"
+                    >
+
+                    <p>
+                        Las tarjetas de presentación reúnen
+                        información esencial de una persona o
+                        empresa, como nombre, ocupación,
+                        logotipo y medios de contacto.
+                    </p>
+
+                    <p>
+                        Una buena composición organiza estos datos
+                        de manera legible y mantiene una identidad
+                        visual coherente con el negocio.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="flyers">
+                    <h3>Tarjetas promocionales</h3>
+
+                    <img
+                        src="img/prod_197.jpg"
+                        alt="Tarjetas promocionales impresas"
+                    >
+
+                    <p>
+                        El material promocional impreso ayuda
+                        a presentar ofertas, novedades, productos
+                        o servicios. Su contenido debe destacar
+                        el mensaje principal y orientar al público
+                        hacia la acción deseada.
+                    </p>
+
+                    <p>
+                        La distribución de la información,
+                        las imágenes y el tamaño de letra deben
+                        adaptarse al formato y a la cantidad
+                        de contenido.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="pines">
+                    <h3>Pines personalizados</h3>
+
+                    <img
+                        src="img/pines_personalizados.jpg"
+                        alt="Pines con diseños y símbolos personalizados"
+                    >
+
+                    <p>
+                        Los pines son pequeños artículos decorativos
+                        que pueden incluir logotipos, símbolos,
+                        ilustraciones o personajes. Se utilizan
+                        como recuerdos, identificadores y productos
+                        de colección.
+                    </p>
+
+                    <p>
+                        El diseño debe considerar el tamaño final,
+                        el nivel de detalle y el método de fabricación,
+                        para que los elementos importantes puedan
+                        distinguirse correctamente.
+                    </p>
+                </article>
+            </section>
+
+            <!--letreros y señaletica-->
+            <section class="servicio-grupo">
+                <h2>4. Letreros y señalización comercial</h2>
+
+                <article class="card servicio-detalle" id="letreros">
+                    <h3>Letreros para locales</h3>
+
+                    <img
+                        src="img/letreros_locales.jpg"
+                        alt="Letrero comercial para identificar un local"
+                    >
+
+                    <p>
+                        Los letreros permiten identificar tiendas,
+                        oficinas, restaurantes y otros
+                        establecimientos. Su diseño debe facilitar
+                        la lectura del nombre comercial y mantener
+                        una buena visibilidad desde el lugar
+                        donde será observado.
+                    </p>
+
+                    <p>
+                        El material y las dimensiones se seleccionan
+                        según el espacio disponible, el tipo de
+                        instalación y las condiciones ambientales.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="letreros3d">
+                    <h3>Letreros publicitarios 3D</h3>
+
+                    <img
+                        src="img/letreros3d.webp"
+                        alt="Letrero con letras tridimensionales"
+                    >
+
+                    <p>
+                        Los letreros tridimensionales utilizan
+                        letras o figuras con volumen para aportar
+                        profundidad a la identidad visual
+                        de una marca.
+                    </p>
+
+                    <p>
+                        Dependiendo del proyecto, pueden elaborarse
+                        con materiales como acrílico, PVC o metal.
+                        La elección depende de la apariencia
+                        deseada, el tamaño y las condiciones
+                        de instalación.
+                    </p>
+
+                    <p>
+                        <strong>Aplicaciones:</strong>
+                        fachadas, recepciones, oficinas y
+                        establecimientos comerciales.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="luminosos">
+                    <h3>Letreros luminosos</h3>
+
+                    <img
+                        src="img/letrero_luminoso.jpg"
+                        alt="Letrero comercial con iluminación"
+                    >
+
+                    <p>
+                        Los letreros luminosos incorporan
+                        iluminación para mejorar la visibilidad
+                        de nombres comerciales, logotipos
+                        y mensajes publicitarios.
+                    </p>
+
+                    <p>
+                        Para su elaboración deben considerarse
+                        el sistema de iluminación, el consumo
+                        eléctrico, la ubicación, el mantenimiento
+                        y las condiciones de seguridad
+                        de la instalación.
+                    </p>
+                </article>
+
+                <article class="card servicio-detalle" id="senalizacion">
+                    <h3>Señalización comercial</h3>
+
+                    <img
+                        src="img/señaleticas.jpg"
+                        alt="Señalización comercial informativa"
+                    >
+
+                    <p>
+                        La señalización permite identificar áreas,
+                        orientar a los visitantes y comunicar
+                        indicaciones dentro de un establecimiento.
+                    </p>
+
+                    <p>
+                        Debe emplear mensajes breves, símbolos
+                        reconocibles y un contraste suficiente
+                        para facilitar la lectura. El material
+                        se elige según el lugar de colocación
+                        y el uso previsto.
+                    </p>
+                </article>
+            </section>
+        </div>
+
+        
+            <!--proceso de trabajo-->
+            <section class="servicio-grupo">
+                <h2>5. ¿Cómo se prepara un proyecto publicitario?</h2>
+
+                <article class="card">
+                    <h3>1. Definición de la idea</h3>
+                    <p>
+                        Se identifica el objetivo del producto,
+                        el público al que se dirige y el mensaje
+                        que se desea comunicar.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>2. Preparación del diseño</h3>
+                    <p>
+                        Se organizan los textos, las imágenes,
+                        los colores y el logotipo considerando
+                        el tamaño final del producto.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>3. Elección de materiales y técnica</h3>
+                    <p>
+                        Se seleccionan los materiales, el método
+                        de impresión o fabricación y los acabados
+                        según el uso previsto.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>4. Revisión del resultado</h3>
+                    <p>
+                        Se comprueban las dimensiones, la
+                        legibilidad, la presentación y los detalles
+                        del producto antes de dar por terminado
+                        el proyecto.
+                    </p>
+                </article>
+            </section>
+
+            <!--externos-->
+            <section class="servicio-grupo">
+                <h2>Recursos para conocer más</h2>
+
+                <p>
+                    Puedes consultar estas fuentes para ampliar
+                    la información sobre técnicas y materiales:
+                </p>
+
+                <ul class="fuentes" style="margin: 10px 10px 10px 10px  ;">
+                    <li>
+                        <a
+                            href="https://jpdigital.com.ec/guia-completa-de-sublimacion-como-empezar-que-necesitas-y-como-evitar-errores-comunes/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            JP digital: Guía Completa de Sublimación
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://brander.ec/materiales/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Brander: ¿En que materiales se puede imprimir?
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <section class="hero">
+                <h2>Encuentra la solución para tu idea</h2>
+
+                <p>
+                    Cada proyecto publicitario requiere una
+                    combinación adecuada de diseño, material
+                    y técnica. Explora las opciones disponibles
+                    para conocer los productos que mejor
+                    se adaptan a tus necesidades.
+                </p>
+
+                <a class="boton" href="catalogo.html">
+                    Ver catálogo de productos
+                </a>
+
+                <p style="margin-top: 20px;">
+                    <a href="index.html">Volver al inicio</a>
+                </p>
+            </section>
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <p>
+            HG Personalizados — Tu marca, en grande
+            y en cada detalle.
+        </p>
+
+        <p>
+            <a href="index.html" style="color: white;">Inicio</a> |
+            <a href="catalogo.html" style="color: white;">Catálogo</a> |
+            <a href="servicios.html" style="color: white;">Servicios</a>
+        </p>
+    </footer>
+
+</body>
+</html>
